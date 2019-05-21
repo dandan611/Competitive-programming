@@ -27,6 +27,9 @@ for i in range(n) :
 ## Calculation
 
 ```
+#Class-A リスト化
+list(s))
+
 #Class-A 文字列置換
 print(string.replace(","," "))
 
