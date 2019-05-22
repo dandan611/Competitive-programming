@@ -28,7 +28,7 @@ for i in range(n) :
 
 ```
 #Class-A リスト化
-list(s))
+list(s)
 
 #Class-A 文字列置換
 print(string.replace(","," "))
@@ -39,10 +39,19 @@ a.sort(reverse=False)
 #Class-B 文字列結合
 mojiretu = ','.join(str_list)
 
+```
+
+## Output
 
 ```
+#Class-A 固定桁
+"{0:03d}".format(a%1000 + 1)
+
+```
+
 
 ## Reference
 
 * https://note.nkmk.me/python-capitalize-lower-upper-title/
 * http://www.isc.meiji.ac.jp/~mizutani/python/sorting.html
+* http://nonbiri-tereka.hatenablog.com/entry/2014/08/08/121208
