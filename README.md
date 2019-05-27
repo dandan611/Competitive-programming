@@ -36,8 +36,14 @@ print(string.replace(","," "))
 #Class-B 文字列並び替え
 a.sort(reverse=False)
 
+#Class-B 多層リスト等の並び替え
+from operator import itemgetter
+sorted_list = sorted(input_list, key=itemgetter(1), reverse=True)
+sorted_list = sorted(sorted_list, key=itemgetter(0), reverse=False)
+
 #Class-B 文字列結合
 mojiretu = ','.join(str_list)
+
 
 ```
 
