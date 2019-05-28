@@ -47,11 +47,12 @@ mojiretu = ','.join(str_list)
 #Class-B for文の途中終了
 import sys
 s = list(input())
- 
 for count_s in s:
     if (int(s.count(count_s)%2) != 0) :
         print("No")
         sys.exit()
+#Class-B リストのqueueとしての利用
+a.pop(0)
 
 
 ```
