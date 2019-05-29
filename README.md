@@ -33,6 +33,13 @@ list(s)
 #Class-A 文字列置換
 print(string.replace(","," "))
 
+#Class-A ユークリッドの互除法(最大公約数)
+def gcd(x, y):
+    if y == 0:
+        return x
+    else:
+        return gcd(y, x%y)
+
 #Class-B 文字列並び替え
 a.sort(reverse=False)
 
