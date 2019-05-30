@@ -30,6 +30,9 @@ for i in range(n) :
 #Class-A リスト化
 list(s)
 
+#Class-A リスト要素の数え上げ
+s.count(s[0])
+
 #Class-A 文字列置換
 print(string.replace(","," "))
 
