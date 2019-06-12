@@ -75,9 +75,14 @@ a.pop(0)
 
 ```
 
+## Output
+
+* 四則演算は、オーバーフローの際に利用する演算子を変えるか検討すること
+
 
 ## Reference
 
 * https://note.nkmk.me/python-capitalize-lower-upper-title/
 * http://www.isc.meiji.ac.jp/~mizutani/python/sorting.html
 * http://nonbiri-tereka.hatenablog.com/entry/2014/08/08/121208
+* http://mzgkworks.hateblo.jp/entry/bitbucket-project
