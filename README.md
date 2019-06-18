@@ -82,7 +82,11 @@ a.pop(0)
 
 ## Reference
 
-* https://note.nkmk.me/python-capitalize-lower-upper-title/
-* http://www.isc.meiji.ac.jp/~mizutani/python/sorting.html
-* http://nonbiri-tereka.hatenablog.com/entry/2014/08/08/121208
-* http://mzgkworks.hateblo.jp/entry/bitbucket-project
+* ABC C問題の練習
+  * https://qiita.com/drken/items/e77685614f3c6bf86f44
+
+* 他
+  * https://note.nkmk.me/python-capitalize-lower-upper-title/
+  * http://www.isc.meiji.ac.jp/~mizutani/python/sorting.html
+  * http://nonbiri-tereka.hatenablog.com/entry/2014/08/08/121208
+  * http://mzgkworks.hateblo.jp/entry/bitbucket-project
