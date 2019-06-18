@@ -46,6 +46,9 @@ def gcd(x, y):
 #Class-B 文字列並び替え
 a.sort(reverse=False)
 
+#Class-B リストの重複要素を削除 
+l_unique = list(set(a))
+
 #Class-B 多層リスト等の並び替え
 from operator import itemgetter
 sorted_list = sorted(input_list, key=itemgetter(1), reverse=True)
