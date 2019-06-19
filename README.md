@@ -94,3 +94,4 @@ a.pop(0)
   * http://www.isc.meiji.ac.jp/~mizutani/python/sorting.html
   * http://nonbiri-tereka.hatenablog.com/entry/2014/08/08/121208
   * http://mzgkworks.hateblo.jp/entry/bitbucket-project
+  * https://note.nkmk.me/python-dict-value-max-min/
