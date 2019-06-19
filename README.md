@@ -87,6 +87,7 @@ a.pop(0)
 
 * ABC C問題の練習
   * https://qiita.com/drken/items/e77685614f3c6bf86f44
+  * https://qiita.com/drken/items/fd4e5e3630d0f5859067
 
 * 他
   * https://note.nkmk.me/python-capitalize-lower-upper-title/
