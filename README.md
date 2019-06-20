@@ -17,10 +17,16 @@ a, b, c = map(int, input().split())
 list_num = [num for num in input().split()]
 
 #Class-B 行ごとの入力(n行)
-input_list = []
+l = []
 for i in range(n) :
     a = int(input())
-    input_list.append(a)
+    l.append(a)
+
+#Class-B 行ごとの入力(行数指定なし)
+import sys
+a = []
+for line in sys.stdin:
+    a.append(line.rstrip("\n"))
 
 ```
 
