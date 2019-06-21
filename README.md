@@ -90,9 +90,14 @@ a.pop(0)
 
 ## TLE list
 
+解けたけど時間が無理だった系
+
 * [ABC]C - Write and Erase
+  * 解説のやり方でもTLE、dictionaly型を読み込みの時に作成して、要素があるときに抜くように実装したほうが早い。
 
 ## Not Solved list
+
+まったくわからなかった系
 
 * -
 
