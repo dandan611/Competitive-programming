@@ -88,6 +88,13 @@ a.pop(0)
 
 * 四則演算は、オーバーフローの際に利用する演算子を変えるか検討すること
 
+## TLE list
+
+* [ABC]C - Write and Erase
+
+## Not Solved list
+
+* -
 
 ## Reference
 
