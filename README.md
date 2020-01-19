@@ -88,6 +88,77 @@ a.pop(0)
 
 * 四則演算は、オーバーフローの際に利用する演算子を変えるか検討すること
 
+
+## Algorithm
+
+### 動的計画法
+
+```
+# 最大和問題
+def max_sum(N,a):
+  dp=[0]*(N+1)
+  for i in range(N):
+    dp[i+1]=max(dp[i],dp[i]+a[i])
+  return dp[N]
+```
+
+```
+# ナップサック問題
+def knapsack(N,W,weight,value):
+  #初期化
+  inf=float("inf")
+  dp=[[-inf for i in range(W+1)] for j in range(N+1)]
+  for i in range(W+1): dp[0][i]=0
+
+  #DP
+  for i in range(N):
+    for w in range(W+1):
+      if weight[i]<=w: #dp[i][w-weight[i]の状態にi番目の荷物が入る可能性がある
+        dp[i+1][w]=max(dp[i][w-weight[i]]+value[i], dp[i][w])
+      else: #入る可能性はない
+        dp[i+1][w]=dp[i][w]
+  return dp[N][W]
+```
+
+```
+# 部分和問題
+def part_sum0(a,A):
+  #初期化
+  N=len(a)
+  dp=[[0 for i in range(A+1)] for j in range(N+1)]
+  dp[0][0]=1
+
+  #DP
+  for i in range(N):
+    for j in range(A+1):
+      if a[i]<=j: #i+1番目の数字a[i]を足せるかも
+        dp[i+1][j]=dp[i][j-a[i]] or dp[i][j]
+      else: #入る可能性はない
+        dp[i+1][j]=dp[i][j]
+  return dp[N][A]
+```
+
+
+```
+# 部分和数え上げ問題
+def part_sum(a,A):
+  p=10**9+7
+  #初期化
+  N=len(a)
+  dp=[[0 for i in range(A+1)] for j in range(N+1)]
+  dp[0][0]=1
+
+  #DP
+  for i in range(N):
+    for j in range(A+1):
+      if a[i]<=j: #i+1番目の数字a[i]を足せるかも
+        dp[i+1][j]=dp[i][j-a[i]]+ dp[i][j]% p
+      else: #入る可能性はない
+        dp[i+1][j]=dp[i][j]%p
+  return dp[N][A]
+```
+
+
 ## TLE list
 
 解けたけど時間が無理だった系
@@ -109,6 +180,7 @@ a.pop(0)
 
 * 累積和、いもす法の解説
   * http://puzzleknot.org/study/249/
+* http://wakabame.hatenablog.com/entry/2017/09/10/211428
 
 * 他
   * https://note.nkmk.me/python-capitalize-lower-upper-title/
