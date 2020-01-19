@@ -159,6 +159,55 @@ def part_sum(a,A):
 ```
 
 
+```
+# 累積和
+from itertools import accumulate
+
+N = 5 #要素数
+K = 2 #何個要素が続く最大を求めるか
+A = [3,4,-2, 8, 9]
+
+B = [0] + A
+
+B = list(accumulate(B)) #累積和
+# B = [0, 3, 7, 5, 13, 22]
+answer = []
+
+for i in range(N-(K-1)):
+    answer.append(B[i+K]-B[i])
+
+print(max(answer))    
+```
+
+```
+# 尺取り法
+right = 0
+left = 0
+total = 1
+max_len = 0
+
+list1 = [4,1,7,2]
+K = 6
+n = 4
+
+while right < n :
+    if total*list1[right] <= k:
+        total = total*list1[right]
+        right = right+1
+        max_len = max(max_len, right-left)
+
+    elif right == left:
+        right = right+1
+        left = left+1
+
+    else:
+        total //= list1[left]
+        left = left+1
+
+print(max_len)
+```
+
+
 ## TLE list
 
 解けたけど時間が無理だった系
