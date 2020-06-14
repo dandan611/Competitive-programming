@@ -19,4 +19,4 @@ def get_prime(n):
 
     return prime + data
 
-print(get_prime(200))
+print(get_prime(20000))
