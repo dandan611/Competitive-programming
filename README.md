@@ -82,6 +82,8 @@ a.pop(0)
 #Class-A 固定桁
 "{0:03d}".format(a%1000 + 1)
 
+print("%d %d %.10f"%(a/b,a%b,a/b))
+
 ```
 
 ## Output
