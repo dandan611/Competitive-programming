@@ -69,6 +69,10 @@ from operator import itemgetter
 sorted_list = sorted(input_list, key=itemgetter(1), reverse=True)
 sorted_list = sorted(sorted_list, key=itemgetter(0), reverse=False)
 
+# 重複なし組み合わせ
+import itertools
+itertools.combinations([1,2,3,4], 3)
+
 #Class-B 文字列結合
 mojiretu = ','.join(str_list)
 
