@@ -14,7 +14,7 @@ a = int(input())
 a, b, c = map(int, input().split())
 
 #Class-A スペース区切りの整数の入力(未知数)
-list_num = [num for num in input().split()]
+ln = [num for num in input().split()]
 
 #Class-B 行ごとの入力(n行)
 l = []
@@ -29,6 +29,15 @@ for line in sys.stdin:
     a.append(line.rstrip("\n"))
 
 ```
+
+## Calculation
+
+```
+# 多次元配列の初期配列作成
+h=[[[0 for i in range(10)]for j in range(3)]for k in range(4)]
+
+```
+
 
 ## Calculation
 
