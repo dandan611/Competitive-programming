@@ -23,7 +23,7 @@ for i in range(n) :
     l.append(a)
     
 #Class-B 短くするとき
-ln [list(map(int,input().split())) for _ in range(n)]
+ln = [list(map(int,input().split())) for _ in range(n)]
 
 #Class-B 行ごとの入力(行数指定なし)
 import sys
