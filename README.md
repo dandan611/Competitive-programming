@@ -90,6 +90,16 @@ for count_s in s:
 a.pop(0)
 
 
+#Class-C 最小公倍数(最大公約数を利用したパターン)
+import math
+
+def lcm(x, y):
+    return (x * y) // math.gcd(x, y)
+
+a, b = map(int , input().split())
+
+print(lcm(a, b))
+
 ```
 
 ## Output
