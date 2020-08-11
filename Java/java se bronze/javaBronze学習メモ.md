@@ -60,7 +60,7 @@ javaBronze学習メモ
   * 同一クラスでのオーバーロード可能
 
 * staticとは
-  * （要確認）
+  * 一つだけ共有する奴
 
 * キャスト
 
@@ -69,10 +69,12 @@ javaBronze学習メモ
 * 実装して確かめるもの
   * interface
   * 多重継承
+    * やりたい場合は、interfaceを使う
   * スーパークラス
   * サブクラス
   * オーバーライド、オーバーロード
   * this()
+
 
 ## 参考
 * https://style.potepan.com/articles/18391.html
